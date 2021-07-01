@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: clientfeign
+  profiles:
+    active: dev
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+  cloud:
+    config:
+      uri: http://localhost:8762
+      fail-fast: true
